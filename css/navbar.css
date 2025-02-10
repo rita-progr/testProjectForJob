@@ -1,0 +1,40 @@
+.wrapper{
+    position: relative;
+    width: 100%;
+    /*padding: 2rem;*/
+
+}
+#nav-placeholder{
+    display:flex;
+    padding:0.5rem 0;
+    position: absolute;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__link_item{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.navbar{
+    display:flex;
+    padding:0 2rem;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__links{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1.5rem;
+}
+.utils-group{
+    display:flex;
+    gap:7rem;
+}
+.utils-group_item{
+    margin-right:3rem;
+}

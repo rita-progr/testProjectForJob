@@ -1,0 +1,40 @@
+.slider{
+    /*padding-top:1rem;*/
+    width: 100%;
+    overflow: hidden;
+}
+.slider-container{
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    gap:1rem;
+    /*padding-top:4rem;*/
+}
+.slide {
+    flex: 1;
+    height:800px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: flex 0.5s ease-in-out;
+    border-radius: 3rem;
+}
+.slide img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0.7);
+}
+.slide.active {
+    flex: 3; /* Активный слайд в два раза больше других */
+
+}
+.slide.active img {
+    transform: scale(1.5); /* Увеличиваем изображение в 1.5 раза */
+}
+.slider-container__item_1{
+    background-color: #FA8FEF ;
+}
+.slider-container__item_2{
+    background-color: #AECFFF;
+}

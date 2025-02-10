@@ -1,0 +1,40 @@
+@import url('./../assets/fonts/font/stylesheet.css');
+@import url('../assets/fonts/leMurmure/stylesheet.css');
+@import url('./navbar.css');
+@import url('./slider.css');
+
+:root {
+    --main-font: 'Euclid Circular A', Arial, sans-serif;
+    --secondary-font:'Le Murmure', cursive;
+}
+
+
+
+body {
+    font-family: var(--main-font);
+    /*position: relative;*/
+    line-height: 1.6;
+    margin: 0;
+    padding: 1rem;
+    background-color:#AE97E8 ;
+    color: white;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+input{
+    background-color: transparent ;
+    border: none;
+}
+input::placeholder{
+    font-size: 1rem;
+    color:white;
+}
+.leMureText{
+    font-family: var(--secondary-font);
+}
+.font-2rem{
+    font-size: 2rem;
+}
