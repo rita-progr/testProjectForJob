@@ -1,28 +1,30 @@
 .slider{
-    /*padding-top:1rem;*/
     width: 100%;
     overflow: hidden;
+
 }
 .slider-container{
     display: flex;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.7s ease-in-out;
     gap:1rem;
+    padding: 1rem 2rem;
     /*padding-top:4rem;*/
 }
 .slide {
     flex: 1;
     height:800px;
+    position: relative;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: flex 0.5s ease-in-out;
+    transition: flex 0.7s ease-in-out;
     border-radius: 3rem;
 }
 .slide img {
     max-width: 100%;
     height: auto;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.7s ease-in-out;
     transform: scale(0.7);
 }
 .slide.active {
@@ -34,7 +36,53 @@
 }
 .slider-container__item_1{
     background-color: #FA8FEF ;
+
+}
+.slider-container__item_0{
+    background: center/contain url('./../assets/images/Benjamin Moore.svg') no-repeat ;
+    position: relative;
 }
 .slider-container__item_2{
     background-color: #AECFFF;
+}
+.slide__title{
+    color:#D9FF5A;
+    position: absolute;
+    left: 0;
+    top:38%;
+}
+.slide__description{
+    font-size: 0.9em;
+    max-width: 300px;
+    position: absolute;
+    left: 0;
+    bottom:3%;
+}
+.title{
+    font-size:1.3rem;
+    font-weight: 500;
+}
+.button_buy{
+    display: flex;
+    position: absolute;
+}
+
+.slide__button{
+    max-width:200px;
+    position: absolute;
+    right: 7%;
+    bottom:7%;
+}
+.remove{
+    display: none;
+}
+.add{
+    display: block;
+}
+.slide_number{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    bottom:2%;
 }

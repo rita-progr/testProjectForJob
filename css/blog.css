@@ -1,0 +1,77 @@
+.blog{
+    padding:15rem 2rem;
+}
+.blog__slider{
+    display: flex;
+    gap:0.5rem;
+    width: 100%;
+}
+.blog___slider_form>img{
+    width: 100%;
+}
+.blog___slider_form{
+    position:relative;
+    display:flex;
+}
+.blog___slider_img{
+    position:absolute;
+    left:75%;
+    top:51%;
+    transform:translate(-50%,-50%);
+}
+.blog___slider_img{
+    max-width:200px;
+    width:100%;
+}
+.blog___slider_img>img{
+    width:100%;
+    border-radius:1.5rem;
+}
+.blog__slider_title{
+    position: absolute;
+    top:5%;
+    left:33%;
+    text-align:right;
+}
+.blog__slider_desc{
+    position: absolute;
+    top:30%;
+    left:5%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.blog__slider_date{
+    position: absolute;
+    bottom:5%;
+    left:5%;
+}
+.blog__slider_time{
+    display: flex;
+    /*flex-direction: column;*/
+    gap:0.5rem;
+    align-items: center;
+    position: absolute;
+    padding:0.5rem 0.7rem;
+    border:1px solid #D9FF5A;
+    border-radius:100%;
+    bottom:-15%;
+    left:23%;
+    rotate: -30deg;
+    background:#BDABEC;
+}
+.blog___slider_form {
+    flex: 0 0 100%; /* По умолчанию показываем один слайд */
+    box-sizing: border-box;
+}
+@media (min-width: 768px) {
+    .blog___slider_form {
+        flex: 0 0 50%; /* Три слайда в ряд */
+    }
+}
+
+/* На больших экранах показываем три слайда */
+@media (min-width: 1400px) {
+    .blog___slider_form {
+        flex: 0 0 33.33%; /* Три слайда в ряд */
+    }
+}

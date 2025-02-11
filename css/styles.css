@@ -1,21 +1,27 @@
 @import url('./../assets/fonts/font/stylesheet.css');
 @import url('../assets/fonts/leMurmure/stylesheet.css');
+@import url('../assets/fonts/wavy/styleWavy.css');
 @import url('./navbar.css');
 @import url('./slider.css');
+@import url('./category.css');
+@import url('./blog.css');
 
 :root {
     --main-font: 'Euclid Circular A', Arial, sans-serif;
     --secondary-font:'Le Murmure', cursive;
+    --wavy-font:'Wavy', cursive;
 }
 
-
+p{
+    margin: 0;
+}
 
 body {
     font-family: var(--main-font);
     /*position: relative;*/
     line-height: 1.6;
     margin: 0;
-    padding: 1rem;
+    /*padding: 1rem;*/
     background-color:#AE97E8 ;
     color: white;
     font-size: 1rem;
@@ -38,3 +44,26 @@ input::placeholder{
 .font-2rem{
     font-size: 2rem;
 }
+.fz-title{
+    font-size:3rem;
+    font-weight: 400;
+}
+.font-08rem{
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+.price{
+    display: flex;
+    margin-top: 1rem;
+    font-size: 3rem;
+    color:#D9FF5A;
+    position: relative;
+}
+.price_amount{
+    position: absolute;
+    bottom: 1.3rem;
+    left:40%;
+}
+.wavy{
+    font-family: var(--wavy-font);
+ }

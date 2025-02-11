@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Wavy';
+    src: url('FloresteWavy-BWPqd.otf') format('opentype'); /* Путь к файлу шрифта */
+    font-weight: normal; /* Насыщенность шрифта (можно указать bold, 700 и т.д.) */
+    font-style: normal; /* Стиль шрифта (можно указать italic) */
+}
