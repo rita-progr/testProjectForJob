@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Le Murmure';
+    src: url('LeMurmure-Regular.eot');
+    src: local('LeMurmureRegular'), local('LeMurmure-Regular'),
+        url('LeMurmure-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LeMurmure-Regular.woff2') format('woff2'),
+        url('LeMurmure-Regular.woff') format('woff'),
+        url('LeMurmure-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
