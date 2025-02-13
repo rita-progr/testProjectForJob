@@ -5,6 +5,9 @@
 @import url('./slider.css');
 @import url('./category.css');
 @import url('./blog.css');
+@import url('./login.css');
+@import url('./singleGoods.css');
+@import url('./contacts.css');
 
 :root {
     --main-font: 'Euclid Circular A', Arial, sans-serif;
@@ -32,6 +35,10 @@ a{
 }
 input{
     background-color: transparent ;
+    border: none;
+}
+input:focus{
+    outline: none;
     border: none;
 }
 input::placeholder{
@@ -64,6 +71,33 @@ input::placeholder{
     bottom: 1.3rem;
     left:40%;
 }
+.flex-center{
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+    justify-content: space-between;
+}
 .wavy{
     font-family: var(--wavy-font);
  }
+.text-center{
+    text-align: center;
+}
+.font-1-5rem{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    background: none;
+    color: inherit;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    outline: none;
+    box-shadow: none;
+}

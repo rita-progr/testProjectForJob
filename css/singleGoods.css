@@ -1,0 +1,155 @@
+#single-goods-wrapper{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #AE97E8;
+    top:0;
+    z-index:100000;
+    font-size:0.9rem;
+}
+
+.single-goods-maincont{
+    background-image: url('./../assets/images/Benjamin Moore.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: 80rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+
+.single-goods_container{
+    background-image: url('./../assets/images/лампа.png') ;
+    background-repeat: no-repeat;
+    background-position: 48% 7%;
+    background-size: 29rem;
+    display: grid;
+    grid-template-rows: auto auto 10rem 1fr; /* Последний ряд занимает оставшееся пространство */
+    height: 100vh; /* Занимает всю высоту окна */
+}
+.single-goods{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.single-goods-close{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-bottom: 3rem;
+
+}
+.single-goods-close>p{
+    opacity: 0.5;
+}
+.single-goods_fav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99rem;
+    padding:1rem;
+    border:1px solid #D9FF5A;
+    background: #BDABEC;
+}
+.single-goods_fav>img{
+    width:1.3rem;
+}
+.round-goods{
+    width:0.8rem;
+    height:0.8rem;
+    background-color: #7d69b6;
+    border:1px solid #FFFFFF;
+    border-radius:99rem;
+
+}
+.single-goods-end{
+    margin-top: auto;
+    margin-bottom: 5rem;
+}
+.single-goods_img{
+    max-width:17rem;
+}
+.single-goods_img>img{
+    width:100%;
+}
+.single-goods_prise{
+    position: relative;
+}
+.img{
+    position: absolute;
+    top:40%;
+    left:70%;
+}
+.single-goods_prise{
+    font-size: 3rem ;
+}
+.single-goods_prise-title{
+    font-size: 5rem;
+}
+/*.price-r{*/
+/*    position: absolute;*/
+/*    top:10%;*/
+/*    left:20%;*/
+/*}*/
+@media(max-width:1024px){
+    .single-goods_container{
+        background-position: 48% 20%;
+        background-size: 40%;
+        grid-template-rows: auto auto auto; /* Последний ряд занимает оставшееся пространство */
+    }
+    .single-goods_prise-title{
+        font-size: 3rem !important;
+    }
+    .single-goods_prise>p{
+        font-size: 2rem ;
+    }
+    .single-goods-maincont{
+        background-image: url('./../assets/images/Benjamin Moore.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 40%;
+        background-size: 30rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+}
+@media(max-width:576px){
+    .single-goods_container{
+        background-position: 48% 20%;
+        background-size: 60%;
+        grid-template-rows: 4rem 5rem 1fr auto; /* Последний ряд занимает оставшееся пространство */
+    }
+    .single-goods-nocenter{
+        padding-top:10rem;
+    }
+    .single-goods-end {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .single-goods_img{
+        position: absolute;
+        right: 1rem;
+        bottom: 4rem;
+        max-width:15rem ;
+    }
+    .single-goods_prise-title{
+        order:0;
+    }
+    .single-goods_prise-title-2{
+        order:1;
+    }
+    /*.single-goods_prise-title{*/
+    /*    font-size: 2rem !important;*/
+    /*}*/
+    /*.single-goods_prise>p{*/
+    /*    font-size: 1rem ;*/
+    /*}*/
+
+}
+#single-goods-wrapper{
+    display: none;
+}
+.add{
+   display: block !important;
+}

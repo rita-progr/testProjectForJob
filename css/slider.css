@@ -74,10 +74,10 @@
     bottom:7%;
 }
 .remove{
-    display: none;
+    display: none !important;
 }
 .add{
-    display: block;
+    display: block !important;
 }
 .slide_number{
     display: flex;
