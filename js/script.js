@@ -14,8 +14,8 @@ window.loadNav = function() {
             const loginModal = document.querySelector('.modalLogin-wrapper');
             const contactIcon = document.querySelector('.contact-icon');
             const modalContact = document.getElementById('contacts-wrapper');
-
-
+            const iconFav = document.querySelector('.favourite-icon');
+            const modalFav = document.getElementById('favouritePage');
             loginSet.addEventListener('click', () => {
                 modal.classList.remove('add');
                 loginModal.classList.add('add');
@@ -38,6 +38,11 @@ window.loadNav = function() {
             contactIcon.addEventListener('click', () => {
                 modalContact.classList.add('add');
             })
+
+            iconFav.addEventListener('click', () => {
+                modalFav.classList.toggle('add');
+            })
+
         })
         .catch(error => console.error('Ошибка при загрузке навигации:', error));
 }

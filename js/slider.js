@@ -2,6 +2,8 @@ const slides = document.querySelectorAll('.slide');
 let activeIndex = 0;
 slides.forEach(slide => {
     slides[activeIndex].classList.add('active');
+    removeChildElementsExceptImg(slide);
+    addChildElementsExceptImg( slides[activeIndex]);
 })
 
 function updateActiveSlide(newActiveIndex) {
@@ -18,6 +20,8 @@ function updateActiveSlide(newActiveIndex) {
 }
 function removeChildElementsExceptImg(element) {
     const children = Array.from(element.children);
+    console.log(element);
+    element.style.backgroundImage = '';
     children.forEach(child => {
         if (child.tagName !== 'IMG') {
             child.classList.remove('add');

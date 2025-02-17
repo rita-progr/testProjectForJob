@@ -36,20 +36,31 @@
 }
 .slider-container__item_1{
     background-color: #FA8FEF ;
-
+    background-image: url('./../assets/images/Paint Here Glory.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
 }
 .slider-container__item_0{
     background: center/contain url('./../assets/images/Benjamin Moore.svg') no-repeat ;
     position: relative;
 }
 .slider-container__item_2{
+    /*padding: 2rem;*/
     background-color: #AECFFF;
+    background-image:url('./../assets/images/Benjamin Moore blue.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
 }
 .slide__title{
     color:#D9FF5A;
     position: absolute;
     left: 0;
     top:38%;
+    padding-left: 2rem;
 }
 .slide__description{
     font-size: 0.9em;
@@ -57,6 +68,7 @@
     position: absolute;
     left: 0;
     bottom:3%;
+    padding-left: 1rem;
 }
 .title{
     font-size:1.3rem;

@@ -1,0 +1,50 @@
+#favouritePage{
+    display: none;
+    position: fixed;
+    max-width:520px;
+    z-index: 1000;
+    width: 100%;
+    top:10%;
+    right:3.5rem;
+    background: rgba(0, 0, 0, 0.23);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border-radius: 1.5rem;
+}
+.favourite-page{
+    padding:2rem;
+}
+.favourite-close{
+    position: absolute;
+    top:2%;
+    right:2%;
+}
+.favourite-img{
+    max-height:8.9rem;
+}
+.favourite-img>img{
+    height: 100%;
+}
+.fav-tittle{
+    margin-bottom: 2rem;
+}
+.favourite-btn{
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 99rem;
+    border:2px solid #FFB1F7;
+    text-align: center;
+    background: rgba(239, 213, 239, 0.26);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+.round-fav{
+    width:15px;
+    height:15px;
+    background:#A5D4FF;
+    border-radius:99rem;
+    border:1px solid white;
+}
+.fav-border{
+    padding-bottom:1rem;
+    border-bottom:2px solid #D9FF5A;
+}
