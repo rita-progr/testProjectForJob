@@ -9,6 +9,7 @@
 @import url('./singleGoods.css');
 @import url('./contacts.css');
 @import url('./favourite.css');
+@import url('./cart.css');
 
 :root {
     --main-font: 'Euclid Circular A', Arial, sans-serif;
