@@ -1,6 +1,8 @@
 #favouritePage{
     display: none;
     position: fixed;
+    overflow-y: auto;
+    max-height: 600px;
     max-width:520px;
     z-index: 1000;
     width: 100%;
