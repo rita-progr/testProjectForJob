@@ -8,6 +8,8 @@
 }
 .blog___slider_form>img{
     width: 100%;
+    /*max-height: 16.5rem;*/
+    /*height: 100%;*/
 }
 .blog___slider_form{
     position:relative;
@@ -55,14 +57,17 @@
     padding:0.5rem 0.7rem;
     border:1px solid #D9FF5A;
     border-radius:100%;
-    bottom:10%;
-    left:23%;
+    bottom:-2rem;
+    left:23.2%;
     rotate: -30deg;
     background:#BDABEC;
 }
+
 .blog___slider_form {
     flex: 0 0 100%; /* По умолчанию показываем один слайд */
     box-sizing: border-box;
+    max-height: 17.5rem;
+    height: 100%;
 }
 @media (min-width: 768px) {
     .blog___slider_form {
@@ -75,4 +80,18 @@
     .blog___slider_form {
         flex: 0 0 33.33%; /* Три слайда в ряд */
     }
+}
+
+@media(max-width: 978px){
+    .blog{
+        padding:15rem 1rem;
+    }
+    .blog__slider_time{
+        bottom:-1.6rem;
+        left:23%;
+        padding:0.3rem 0.6rem;
+    }
+}
+.blog__slider-container{
+    height:19.5rem;
 }

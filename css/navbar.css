@@ -6,6 +6,7 @@
     /*padding: 2rem;*/
 
 }
+
 #nav-placeholder{
     z-index: 1000;
     display:flex;
@@ -37,6 +38,7 @@
 .utils-group{
     display:flex;
     gap:7rem;
+    align-items: center;
 }
 .utils-group_item{
     margin-right:3rem;
@@ -49,4 +51,30 @@
     padding:0 1rem 2rem 2rem;
     display:flex;
     justify-content: space-between;
+}
+.callIcon{
+    display:none;
+}
+@media (max-width: 1024px){
+    .catalog, .search, .callTitle, .blog-icon{
+        display:none;
+    }
+    .callIcon{
+        display:block;
+    }
+    .utils-group{
+        gap:1rem;
+    }
+    .utils-group_item{
+        margin-right:0;
+    }
+
+}
+@media (max-width: 576px){
+    .navbar{
+        padding:1rem 2rem;
+    }
+    .main-group{
+        gap:0;
+    }
 }

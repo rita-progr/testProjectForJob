@@ -130,3 +130,10 @@ button {
     top:0.2rem;
     left:4.5rem;
 }
+
+
+@media(max-width:576px){
+    .font-2rem{
+        font-size: 1.5rem;
+    }
+}

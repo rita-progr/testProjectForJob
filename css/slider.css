@@ -1,3 +1,5 @@
+
+
 .slider{
     width: 100%;
     overflow: hidden;
@@ -97,4 +99,78 @@
     position: absolute;
     align-items: center;
     bottom:2%;
+}
+.mainSwiper{
+    display: none !important;
+}
+@media(max-width:1024px){
+    #main-container{
+        display: none;
+    }
+    .mainSwiper{
+        display: block !important;
+        max-height:40rem;
+        position: relative;
+    }
+    .mainSwiper-img{
+        position: absolute;
+        bottom:40%;
+        right:1% ;
+        max-width: 200px;
+    }
+    .mainSwiper-img>img{
+        width: 100%;
+    }
+    .mainSwiper-container{
+        padding: 2rem;
+        position: relative;
+        height: 40rem;
+        background-image: url('./../assets/images/лампа.png') , url('./../assets/images/Benjamin Moore.svg');
+        background-repeat: no-repeat;
+        background-position: 48% 0, 48% 30%;
+        background-size: 17rem, contain;
+        display: grid;
+        grid-template-rows: auto auto 10rem 1fr; /* Последний ряд занимает оставшееся пространство */
+    }
+    .mainSwiper-container-1{
+        padding: 2rem;
+        position: relative;
+        height: 40rem;
+        background-color:#FA8FEF ;
+        background-image: url('./../assets/images/стол.png') , url('./../assets/images/Paint Here Glory.svg');
+        background-repeat: no-repeat;
+        background-position: 48% 20%, 48% 30%;
+        background-size: 15rem, contain;
+        display: grid;
+        grid-template-rows: auto auto 10rem 1fr; /* Последний ряд занимает оставшееся пространство */
+    }
+
+    .mainSwiper-container-2{
+        padding: 2rem;
+        position: relative;
+        height: 40rem;
+        background-color:#A5D4FF ;
+        background-image: url('./../assets/images/стол-2.png') , url('./../assets/images/Benjamin Moore blue.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 20%, 48% 30%;
+        background-size: 13rem, contain;
+        display: grid;
+        grid-template-rows: auto auto 10rem 1fr; /* Последний ряд занимает оставшееся пространство */
+    }
+
+    .mainSwiper-end_img{
+        position: absolute;
+       bottom:1.7rem;
+       left:5rem ;
+
+    }
+
+    .mainSwiper-end{
+        position: absolute;
+        bottom:8rem;
+        left:1rem;
+    }
+    .mainSwiper-title{
+        font-size:1.5rem ;
+    }
 }

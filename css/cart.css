@@ -61,3 +61,8 @@
     border-radius:100%;
     border:2px solid #D9FF5A;
     }
+@media(max-width: 978px){
+    .cart-wrapper{
+        padding: 1rem;
+    }
+}
