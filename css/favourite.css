@@ -29,7 +29,7 @@
     margin-bottom: 2rem;
 }
 .favourite-btn{
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
     border-radius: 99rem;
     border:2px solid #FFB1F7;
     text-align: center;
@@ -47,4 +47,18 @@
 .fav-border{
     padding-bottom:1rem;
     border-bottom:2px solid #D9FF5A;
+}
+@media(max-width: 576px){
+    #favouritePage{
+        right:0;
+    }
+    .favourite-btn{
+        padding:0.7rem;
+    }
+    .fav-border{
+        font-size: 0.8rem;
+    }
+    .favourite-btn>img{
+        width:0.8rem;
+    }
 }

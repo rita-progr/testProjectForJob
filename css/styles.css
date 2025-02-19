@@ -132,8 +132,17 @@ button {
 }
 
 
-@media(max-width:576px){
+@media(max-width:978px){
     .font-2rem{
         font-size: 1.5rem;
+    }
+
+}
+@media(max-width:576px){
+    .font3{
+        font-size: 2rem;
+    }
+    .font-2rem{
+        font-size: 1.3rem;
     }
 }

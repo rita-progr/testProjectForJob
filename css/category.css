@@ -117,9 +117,26 @@
 .upload-more_img{
     position: relative;
 }
+@media(max-width: 1024px){
+    .category_goods_items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap:3rem;
+    }
+}
 @media(max-width: 978px){
     .category{
         padding: 1rem;
     }
 }
-
+@media(max-width: 768px){
+    .category_goods_items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 576px){
+    .category_goods_items{
+        grid-template-columns: 1fr;
+    }
+}

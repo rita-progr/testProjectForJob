@@ -8,8 +8,8 @@
 }
 .blog___slider_form>img{
     width: 100%;
-    /*max-height: 16.5rem;*/
-    /*height: 100%;*/
+    max-height: 17rem;
+    height: 100%;
 }
 .blog___slider_form{
     position:relative;

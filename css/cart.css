@@ -65,4 +65,17 @@
     .cart-wrapper{
         padding: 1rem;
     }
+    .cart-page{
+        padding-top:4rem;
+        display:flex;
+        flex-direction: column;
+    }
+}
+@media(max-width: 576px){
+    .cart-btn>img{
+        width:1.2rem;
+    }
+    .cart-title{
+        font-size: 2rem;
+    }
 }

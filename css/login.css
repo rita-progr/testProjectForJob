@@ -85,3 +85,23 @@ input{
 .toggle-title{
     font-size: 0.8rem;
 }
+@media(max-width: 576px){
+    .modalRegistration-wrapper , .modalLogin-wrapper{
+        right:0;
+    }
+}
+@media(max-width: 480px){
+    .login-title{
+        bottom: 30%;
+        left: 22%;
+    }
+}
+@media(max-width: 375px){
+    .login-title{
+        bottom: 29%;
+        left: 25%;
+    }
+    .signup-title{
+        left: 19%;
+    }
+}

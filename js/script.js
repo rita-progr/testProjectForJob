@@ -13,6 +13,7 @@ window.loadNav = function() {
             const registerSet = document.querySelector('.register-set');
             const loginModal = document.querySelector('.modalLogin-wrapper');
             const contactIcon = document.querySelector('.contact-icon');
+            const contactIconMini = document.querySelector('.contact-icon-mini');
             const modalContact = document.getElementById('contacts-wrapper');
             const iconFav = document.querySelector('.favourite-icon');
             const modalFav = document.getElementById('favouritePage');
@@ -36,6 +37,9 @@ window.loadNav = function() {
                 modal.classList.toggle('add');
             })
             contactIcon.addEventListener('click', () => {
+                modalContact.classList.add('add');
+            })
+            contactIconMini.addEventListener('click', () => {
                 modalContact.classList.add('add');
             })
 
