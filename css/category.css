@@ -139,4 +139,7 @@
     .category_goods_items{
         grid-template-columns: 1fr;
     }
+    .category_title{
+        font-size: 2rem;
+    }
 }

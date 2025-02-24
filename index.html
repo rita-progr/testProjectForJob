@@ -301,9 +301,8 @@
     </div>
 
     <div class="blog" id = "blog">
-        <div>
-            <div class = "blog_pagination">
-            </div>
+        <div class="flex max-300">
+            <div class="custom-pagination"></div>
             <h1 class = "category_title" style = "text-align:left; padding-left:1rem">БЛОГ</h1>
         </div>
         <div class = "blog__slider-container swiper mySwiper">
@@ -570,11 +569,14 @@
         loop: true, // Включаем бесконечную прокрутку
         slidesPerView: 'auto', // Фиксированное количество слайдов
         spaceBetween: 10, // Отступ между слайдами
+        pagination: {
+            el: ".custom-pagination",
+            clickable: true,
+        },
     });
     var mainSwiper = new Swiper(".mainSwiper", {
         direction: "vertical",
         pagination: {
-            el: ".swiper-pagination",
             clickable: true,
         },
     });

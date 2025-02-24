@@ -95,3 +95,30 @@
 .blog__slider-container{
     height:19.5rem;
 }
+.custom-pagination {
+    text-align: center; /* Центрируем точки */
+    z-index: 10
+}
+
+.custom-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.38);
+    opacity: 0.5;
+    margin: 0 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block; /* Точки в строку */
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #ffffff; /* Цвет активной точки */
+}
+.max-300{
+    max-width: 300px;
+    gap:0;
+}
+.swiper-pagination-lock {
+    display: block !important;
+}
